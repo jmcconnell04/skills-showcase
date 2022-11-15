@@ -31,6 +31,7 @@ body {
 }
 
 .tile {
+  font-weight: bold;
   position: absolute;
   width: var(--cell-size);
   height: var(--cell-size);

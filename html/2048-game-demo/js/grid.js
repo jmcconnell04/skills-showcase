@@ -36,7 +36,7 @@ class Cell {
   #tile;
 
   constructor(cellElement, x, y) {
-    this.cellElement = cellElement;
+    this.#cellElement = cellElement;
     this.#x = x;
     this.#y = y;
   }
@@ -55,7 +55,7 @@ class Cell {
 
   set tile(value) {
     this.#tile = value;
-    if (this.#tile == null) return;
+    if (value == null) return;
     this.#tile.x = this.#x;
     this.#tile.y = this.#y;
   }
