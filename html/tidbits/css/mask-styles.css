@@ -1,0 +1,66 @@
+*,
+*::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-size: 7.5vmin;
+}
+/* 
+.box {
+  --g: 6px;
+  --r: 42px;
+
+  width: 300px;
+  aspect-ratio: 1;
+  display: inline-block;
+  border: 1px solid blue;
+
+  background: radial-gradient(var(--r) at left 50% bottom var(--r), green 95%, #0000), radial-gradient(calc(var(--r) + var(--g)) at calc(100% + var(--g)) 50%, #0000 95%, red) top/100% calc(100% - var(--r)) no-repeat;
+} */
+
+.container {
+  --s: 200px;
+  --g: 6px;
+  --r: 42px;
+  display: grid;
+  gap: var(--g);
+  grid: auto-flow var(--s) / repeat(2, var(--s));
+}
+
+.container > img {
+  object-fit: cover;
+  -webkit-mask: var(--_m);
+  mask: var(--_m);
+}
+
+.container > img:is(:nth-child(1), :nth-child(4)) {
+  width: 100%;
+  height: calc((100% + var(--r)));
+}
+
+.container > img:is(:nth-child(2), :nth-child(3)) {
+  height: 100%;
+  width: calc((100% + var(--r)));
+}
+
+.container > img:nth-child(1) {
+  --_m: radial-gradient(calc(var(--r) + var(--g)) at calc(100% + var(--g)) 50%, #0000 95%, #000) top/100% calc(100% - var(--r)) no-repeat, radial-gradient(var(--r) at left 50% bottom var(--r), #000 95%, #0000);
+}
+.container > img:nth-child(2) {
+  place-self: end;
+  --_m: radial-gradient(calc(var(--r) + var(--g)) at 50% calc(100% + var(--g)), #0000 95%, #000) right/calc(100% - var(--r)) 100% no-repeat, radial-gradient(var(--r) at top 50% left var(--r), #000 95%, #0000);
+}
+.container > img:nth-child(3) {
+  --_m: radial-gradient(calc(var(--r) + var(--g)) at 50% calc(0% - var(--g)), #0000 95%, #000) left/calc(100% - var(--r)) 100% no-repeat, radial-gradient(var(--r) at top 50% right var(--r), #000 95%, #0000);
+}
+.container > img:nth-child(4) {
+  place-self: end;
+  --_m: radial-gradient(calc(var(--r) + var(--g)) at calc(0% - var(--g)) 50%, #0000 95%, #000) bottom/100% calc(100% - var(--r)) no-repeat, radial-gradient(var(--r) at left 50% top var(--r), #000 95%, #0000);
+}

@@ -1,0 +1,136 @@
+*,
+*::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-size: 7.5vmin;
+}
+
+.container {
+  --s: 150px; /* size of area */
+  --g: 10px; /* size of gap */
+  display: grid;
+}
+
+/* Hex Start */
+
+.hex-container > img {
+  cursor: pointer;
+  grid-area: 1/1;
+  width: var(--s);
+  aspect-ratio: 0.866;
+  object-fit: cover;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
+  transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
+  transition: 0.2s linear;
+}
+
+.hex-container > img:hover {
+  filter: grayscale(0);
+  z-index: 1;
+  --_t: 1.2;
+}
+
+.hex-container > img:nth-child(1) {
+  --_x: calc(-100% - var(--g));
+}
+.hex-container > img:nth-child(7) {
+  --_x: calc(100% + var(--g));
+}
+.hex-container > img:nth-child(3),
+.hex-container > img:nth-child(5) {
+  --_y: calc(-75% - 0.87 * var(--g));
+}
+.hex-container > img:nth-child(4),
+.hex-container > img:nth-child(6) {
+  --_y: calc(75% + 0.87 * var(--g));
+}
+.hex-container > img:nth-child(3),
+.hex-container > img:nth-child(4) {
+  --_x: calc(-50% - 0.5 * var(--g));
+}
+.hex-container > img:nth-child(5),
+.hex-container > img:nth-child(6) {
+  --_x: calc(50% + 0.5 * var(--g));
+}
+
+/* RHom Start */
+
+.rhom-container {
+  gap: var(--g);
+  grid: auto-flow var(--s) / repeat(2, var(--s));
+  place-items: center;
+  transform: rotate(45deg);
+  margin: calc(var(--s) / 2);
+}
+
+.rhom-container > img:hover {
+  filter: grayscale(0);
+  z-index: 1;
+  --_t: 1.15;
+}
+
+.rhom-container > img {
+  width: 141%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  filter: grayscale(80%);
+  transform: scale(var(--_t, 1)) rotate(-45deg);
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+/* Triangle start */
+
+.triangle-container {
+  grid-template-columns: auto 0 auto;
+  gap: var(--g);
+  place-items: center;
+}
+
+.triangle-container > img {
+  width: 200px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: 0.35s;
+  filter: grayscale();
+  cursor: pointer;
+}
+
+.triangle-container > img:hover {
+  filter: grayscale(0);
+}
+
+.triangle-container > img:nth-child(1) {
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+}
+.triangle-container > img:nth-child(2) {
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.triangle-container > img:nth-child(3) {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%);
+}
+.triangle-container > img:nth-child(4) {
+  clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+}
+.triangle-container > img:nth-child(5) {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.triangle-container > img:nth-child(6) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+/* pizza pie effect start */
+
+.pizza-container {
+  border-radius: 50%;
+  overflow: hidden;
+}
