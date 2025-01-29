@@ -1,0 +1,134 @@
+{
+  "id": 1,
+  "name": "Rock Manor Golf Course",
+  "location": { "city": "Wilmington", "state": "DE" },
+  "slope": { "blue": 126, "white": 123, "green": 119, "red": 108 },
+  "holes": [
+    {
+      "number": 1,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 2,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 3,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 4,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 5,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 6,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 7,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 8,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 9,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 10,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 11,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 12,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 13,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 14,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 15,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 16,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 17,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    },
+    {
+      "number": 18,
+      "par": 4,
+      "tee": { "blue": 350, "white": 300, "green": 200, "red": 250 },
+      "handicap": 1,
+      "adjustedHandicap": 1
+    }
+  ]
+}
