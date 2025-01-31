@@ -1,1 +1,7 @@
-{}
+{
+  "id": 1,
+  "fistName": "Tiger",
+  "lastName": "Woods",
+  "handicapIndex": 15.5,
+  "email": "test@test.com"
+}

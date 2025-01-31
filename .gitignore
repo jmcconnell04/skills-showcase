@@ -3,6 +3,33 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# mongoDB specific items:
+*.log
+*.log.*
+
+.DS_Store
+Thumbs.db
+# MongoDB data directory
+data/
+
+# Docker Compose override files
+docker-compose.override.yml
+
+# Docker build artifacts
+*.tar
+*.img
+*.pid
+# Private key files
+*.pem
+*.key
+*.crt
+
+# Security files
+secrets/
+keys/
+
+
+
 # User-specific files
 *.rsuser
 *.suo
