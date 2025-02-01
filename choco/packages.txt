@@ -1,0 +1,28 @@
+awscli
+awssamcli
+azure-cli
+deno
+dotnet
+dotnetfx
+dotnet-runtime
+gh
+gradle
+maven
+nodejs-lts
+putty
+putty.portable
+python
+sops
+sqlpackage
+terraform
+vagrant
+virtualbox
+visualstudio-installer
+yarn
+correttojdk --version=17.0.2
+correttojdk
+intellijidea-ultimate
+mongodb-shell
+
+
+--az extension add --name azure-devops
