@@ -1,4 +1,4 @@
-namespace ConferenceAttendees.API
+namespace ConferenceAttendees.Api
 {
     public class WeatherForecast
     {
