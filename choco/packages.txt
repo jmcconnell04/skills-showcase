@@ -23,6 +23,7 @@ correttojdk --version=17.0.2
 correttojdk
 intellijidea-ultimate
 mongodb-shell
+pyenv-win
 
 
 --az extension add --name azure-devops
